@@ -11,7 +11,7 @@ Here's how it works:
 Queue Size Management: A system (like a server) processes requests or data in a queue. Back pressure helps by limiting the size of this queue. This limitation is important because it ensures that the system doesn't take on more work than it can handle, which can lead to slowdowns or crashes.
 
 
-When the queue reaches its capacity, clients will receive either a "server busy" message or an HTTP 503 status code, indicating that they should attempt their request at a later time.
+When the queue reaches its capacity, clients will receive either a **"server busy" message or an HTTP 503 status code,** indicating that they should attempt their request at a later time.
 
 
 Throughput and Response Times: By maintaining a manageable queue size, back pressure ensures that the system can process requests at a high throughput rate. This means requests are handled efficiently, leading to good response times for those requests that are being processed.
